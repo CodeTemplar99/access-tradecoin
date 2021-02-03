@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="./frontend/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <style>
+    .testimony-super {
+      background: transparent;
+      /* border: 1px solid #ffc107; */
+      padding: 12px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .testimony-con {
+      background: transparent !important;
+      width: 100%;
+      padding: 3px;
+      margin-bottom: 0px;
+      border-radius: 0px;
+    }
+
+    .testimony-con .lead {
+      background-color: #1e1b2e;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      margin: 12px;
+    }
+
+    .withdraw-con .lead {
+      background-color: goldenrod;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      margin: 12px;
+    }
+
+    .testimony-con .list-group {
+      background: transparent !important;
+    }
+
+    .testimony-con .list-group-item {
+      color: black !important;
+      background: transparent !important;
+    }
+
+    .testimony-con .list-group-item .badge {
+      background: green !important;
+      font-size: 110%;
+    }
+
+    .withdraw-con {
+      border-left: 1px solid #ffc107;
+    }
+
+    .withdraw-list .list-group-item .badge {
+      background: red !important;
+      font-size: 110%;
+    }
+  </style>
+
+
+  <div class="jumbotron testimony-super">
+    <div class="jumbotron testimony-con">
+      <p class="lead">Last Investments</p>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class=" investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class=" investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class="text-black investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class="text-black investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class="text-black investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class="text-black investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center investment-list">
+          <span class="text-black investors"></span>
+          <span class="badge badge-primary badge-pill investment-badge"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="jumbotron testimony-con withdraw-con">
+      <p class="lead">Last Withdrawals</p>
+      <ul class="list-group withdraw-list">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span class="cashout text-black"></span>
+          <span class="badge badge-primary badge-pill withdrawal-badge"></span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <script src="./dummy.js" type="text/javascript"></script>
+  <script>
+    setInterval(() => {
+
+      // investment
+      let items = document.querySelectorAll('.investment-badge');
+      items.forEach(function (item) {
+        function getRandomInt(min, max) {
+          min = Math.ceil(200);
+          max = Math.floor(15000);
+          fillNum = Math.floor(Math.random() * (max - min)) +
+            min; //The maximum is exclusive and the minimum is inclusive
+
+        }
+        getRandomInt()
+        item.innerHTML = "$" + fillNum;
+      });
+
+      // random investors
+      let investors = document.querySelectorAll('.investors');
+      investors.forEach(function (investor) {
+        function getRandomInvestors(min, max) {
+          min = Math.ceil(0);
+          max = Math.floor(3898);
+          invNumber = Math.floor(Math.random() * (max - min)) +
+            min;
+          //The maximum is exclusive and the minimum is inclusive
+
+        }
+        getRandomInvestors()
+        investor.innerHTML = dummies[invNumber];
+      });
+
+      // withdrawal
+      let items1 = document.querySelectorAll('.withdrawal-badge');
+      items1.forEach(function (item1) {
+        function randomWithdraw(min, max) {
+          min = Math.ceil(500);
+          max = Math.floor(7000);
+          fillWithdraw = Math.floor(Math.random() * (max - min)) +
+            min;
+          //The maximum is exclusive and the minimum is inclusive
+
+        }
+
+
+        randomWithdraw()
+        item1.innerHTML = "$" + fillWithdraw;
+        // console.log(item)
+      });
+      // random cash out
+      let cashOuts = document.querySelectorAll('.cashout');
+      cashOuts.forEach(function (cashOut) {
+        function getRandomInvestors(min, max) {
+          min = Math.ceil(0);
+          max = Math.floor(3898);
+          cashNumber = Math.floor(Math.random() * (max - min)) +
+            min;
+          //The maximum is exclusive and the minimum is inclusive
+
+        }
+        getRandomInvestors()
+        cashOut.innerHTML = dummies[cashNumber];
+      });
+
+      // console.log(item)
+
+
+    }, 10000);
+  </script>
+</body>
+
+</html>

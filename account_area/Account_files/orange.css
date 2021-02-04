@@ -1,5 +1,5 @@
 /* =================================================================== */
-/* ORANGE #fd961a
+/* ORANGE #29d429
 ====================================================================== */
 a,
 a:hover,
@@ -70,7 +70,7 @@ body.light .shop-cart .table .icon-delete-product:active
 .shop-cart .btn.btn-update-cart:active,
 .shop-cart .btn.btn-coupon:hover,
 .payment .tooltip-text {
-  color: #fd961a;
+  color: #29d429;
 }
 
 .btn-primary,
@@ -94,7 +94,7 @@ ul.user li.sign-in a:hover,
 body.blog .pagination li.active a,
 .facts,
 .call-action-all .action-btn .btn-primary {
-  background: #fd961a;
+  background: #29d429;
 }
 
 ul.user li.sign-in a:hover,
@@ -110,55 +110,55 @@ ul.user li.sign-in a,
 .shop-cart .btn.btn-update-cart:hover,
 .shop-cart .btn.btn-update-cart:focus,
 .shop-cart .btn.btn-update-cart:active{
-  border: 1px solid #fd961a ;
+  border: 1px solid #29d429 ;
 }
 
 .bitcoin-calculator span.select2,
 .select2-container--default .select2-selection--single {
-  border-bottom: 1px solid #fd961a;
+  border-bottom: 1px solid #29d429;
 }
 
 body.light ul.user li.sign-in a:hover, .slider.btn-primary:hover {
-  border: 1px solid #fd961a;
+  border: 1px solid #29d429;
 }
 
 .team-member-caption {
-  border-top: 3px solid #fd961a;
+  border-top: 3px solid #29d429;
 }
 
 .button-video:after {
-  border-color: transparent transparent transparent #fd961a;
+  border-color: transparent transparent transparent #29d429;
 }
 
 .btcwdgt-chart .btcwdgt-header h2 {
-  background-color: #fd961a !important;
+  background-color: #29d429 !important;
 }
 
 .path {
-  stroke: #fd961a;
+  stroke: #29d429;
 }
 
 @-webkit-keyframes dash {
   0% {
     stroke-dashoffset: 2000;
     opacity: 0;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 
   15% {
     opacity: 1;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 
   70% {
     opacity: 1;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 
   100% {
     stroke-dashoffset: 0;
     opacity: 0;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 }
 
@@ -166,33 +166,33 @@ body.light ul.user li.sign-in a:hover, .slider.btn-primary:hover {
   0% {
     stroke-dashoffset: 2000;
     opacity: 0;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 
   15% {
     opacity: 1;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 
   70% {
     opacity: 1;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 
   100% {
     stroke-dashoffset: 0;
     opacity: 0;
-    stroke: #fd961a;
+    stroke: #29d429;
   }
 }
 
 .btcwdgt.btcwdgt-s-price .btcwdgt-body ul li {
-  color: #fd961a !important;
+  color: #29d429 !important;
 }
 
 .btcwdgt.btcwdgt-chart .btcwdgt-header h2,
 .btcwdgt.btcwdgt-chart .btcwdgt-header .stats {
-  background-color: #fd961a !important;
+  background-color: #29d429 !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -204,7 +204,7 @@ body.light ul.user li.sign-in a:hover, .slider.btn-primary:hover {
 .slider.btn-primary:active,
 ul.user li.sign-in a.btn-primary:focus,
 ul.user li.sign-in a.btn-primary:active {
-  border: 1px solid #fd961a !important;
+  border: 1px solid #29d429 !important;
 }
 
 @media (max-width : 767px) {
@@ -222,7 +222,7 @@ ul.user li.sign-in a.btn-primary:active {
   }
 
   body.light .navbar-collapse ul.navbar-nav > li.active > a, .navbar-collapse ul.navbar-nav > li.active > a {
-    color: #fd961a;
+    color: #29d429;
   }
 }
 
@@ -233,11 +233,11 @@ ul.user li.sign-in a.btn-primary:active {
   }
 
   ul.nav.nav-tabs li.active a:hover, ul.nav.nav-tabs li.active a {
-    background: #fd961a;
+    background: #29d429;
   }
 
   ul.nav.nav-tabs li.active {
-    border-bottom: 1px solid #fd961a;
+    border-bottom: 1px solid #29d429;
   }
   .facts {
 	  background:#222;
